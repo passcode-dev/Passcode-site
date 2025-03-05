@@ -1,7 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import PassCode from "../images/Logo.png";
-import {Button} from "../Components/Buton"
+import PassCode from "../../images/Logo.png";
+import {Button} from "../../Components/Buton"
+
 const Cabecalho = styled.nav `
     display: flex;
     justify-content: space-between;

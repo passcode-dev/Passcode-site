@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Button=styled.button`
+export const Button = styled.button`
     background-color: #3d63ea;
     padding-top: 19px;
     padding-right: 30px;
@@ -11,4 +11,5 @@ export const Button=styled.button`
     color: white;
     border: none;
     box-shadow: 0px 4px 49px 0px #00000026;
+    &:hover{background-color:rgb(210, 219, 250);color:black};
 `

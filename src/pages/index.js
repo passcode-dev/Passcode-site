@@ -1,11 +1,13 @@
-import * as React from "react"
+import * as React from "react";
 import styled from 'styled-components';
-import Footer from './footer/footer';
+import { Header } from "./Header/Header";
 import DevelopmentProcess from "../pages/DevelopmentProcess/DevelopmentProcess";
-import { Service } from "../Services/Services"
-import {Header} from "../Header/Header"
+import { Service } from "./Services/Services";
+import { Produtos } from "./Body/Body";
+import {Clients} from "./Clients/Clients"
+import Footer from './footer/footer';
 
-export { Head } from '../Head'
+export { Head } from '../Head';
 
 const Body = styled.div`
     padding: 0px;
@@ -20,7 +22,9 @@ export default function Home() {
 
       <Body>
         <Header />
+        <Produtos />
         <Service />
+        <Clients/>
         <DevelopmentProcess />
         <Footer />
       </Body>

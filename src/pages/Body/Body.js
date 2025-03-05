@@ -1,7 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import main from "../images/main.png"
-import {Button} from "../Components/Buton"
+import { Button } from "../../Components/Buton";
+import main from "../../images/main.png";
+
 const Conteiner = styled.div` 
     display: flex;
     align-items:center;
@@ -55,17 +56,17 @@ const SpanE = styled.span`
     -webkit-text-fill-color: transparent;
 `
 
-const ConteinerImage=styled.div`
+const ConteinerImage = styled.div`
     width: 614px;
     height: 546px;
     gap: 10px;
 `
-const Img=styled.img`
+const Img = styled.img`
     width: 614px;
     height: 546px;
 
 `
-export const Body = () => {
+export const Produtos = () => {
     return (
         <>
             <Conteiner>
