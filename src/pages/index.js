@@ -1,19 +1,30 @@
 import * as React from "react"
+import styled from 'styled-components';
+import Footer from './footer/footer';
+import DevelopmentProcess from "../pages/DevelopmentProcess/DevelopmentProcess";
+import { Service } from "../Services/Services"
 import {Header} from "../Header/Header"
-import {Body} from "../Body/Body"
-import {Service} from "../Services/Services"
-import "../Css/global.css"
 
-const IndexPage = () => {
+export { Head } from '../Head'
+
+const Body = styled.div`
+    padding: 0px;
+    margin: 0px;
+`
+
+export default function Home() {
+
   return (
+
     <>
-     <Header />
-    <Body/>
-    <Service/>
+
+      <Body>
+        <Header />
+        <Service />
+        <DevelopmentProcess />
+        <Footer />
+      </Body>
     </>
+
   )
 }
-
-export default IndexPage
-
-export const Head = () => <title>PASSCODE</title>
