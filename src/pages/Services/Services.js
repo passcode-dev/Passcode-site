@@ -2,33 +2,31 @@ import React from "react";
 import {Carousel} from "../../Components/Carousel";
 import styled from "styled-components";
 
-const Main=styled.div`
+const Page=styled.div`
     display:flex;
     align-items: center;
     flex-direction: column;
-    height: 602px;
-    top: 823.34px;
-    left: -10px;
+    height: 600px;
+    background: #F9F9FF;
 
     
 `
 const Titulo=styled.div`
-    h1{
-        font-family: Inter;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 55px;
-        letter-spacing: 0%;
-    }
+
+        font-family: "Inter";
+        font-weight: bold;
+        font-size: 24px;
+        color: #1A202C;
+        margin-top: 50px;
 `
 export const Service = () => {
     return(
-        <Main>
+        <Page>
             <Titulo>
                  <h1>Nossos serviços</h1>
             </Titulo>
             <Carousel/>
-        </Main>
+        </Page>
         );
 }
     

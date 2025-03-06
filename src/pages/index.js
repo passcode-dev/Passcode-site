@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { Header } from "./Header/Header";
 import DevelopmentProcess from "../pages/DevelopmentProcess/DevelopmentProcess";
 import { Service } from "./Services/Services";
-import { Produtos } from "./Body/Body";
+import { Products } from "./Products/Products";
 import {Clients} from "./Clients/Clients"
 import Footer from './footer/footer';
+import Approach from "./Approach/Approach";
 
 export { Head } from '../Head';
 
@@ -22,9 +23,10 @@ export default function Home() {
 
       <Body>
         <Header />
-        <Produtos />
+        <Products />
         <Service />
         <Clients/>
+        <Approach/>
         <DevelopmentProcess />
         <Footer />
       </Body>

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import webdesign from "../images/webdesign.png"
@@ -26,6 +26,7 @@ const Card = styled.div`
   display:flex!important;
   background: #fff;
   padding: 20px;
+
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
@@ -35,7 +36,7 @@ const Card = styled.div`
 
   transition: transform 0.3s ease-in-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 `;
 
@@ -43,18 +44,23 @@ const CardInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 310px;
   height: 210px;
+  font-family:'inter';
+
   p {
-    font-size: 12px; 
+    font-size: 14px; 
     color: #666;
+    line-height:20px;
     
   }
 `;
-const CardImgTitle= styled.div` 
+const CardImgTitle = styled.div` 
+
   width: 271px;
   height: 98px;
+  
   h4 {
     font-size: 20px; 
     line-height: 27.3px;
@@ -65,9 +71,15 @@ const CardImgTitle= styled.div`
 const Bola = styled.div`
   width: 58px;
   height: 58px;
-  border-width: solid 1px;
-`
-const IMG=styled.img`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #F76680, #57007B) border-box;
+  border: 1px solid transparent;
+`;
+
+const IMG = styled.img`
   width: 34px;
   height: 34px;
   top: 12px;
@@ -104,40 +116,33 @@ export const Carousel = () => {
         <Card>
           <CardInfo>
             <CardImgTitle>
-                <Bola>
-                  <IMG src={mobile}></IMG>
-                </Bola>
-              <h4>Mobile App Development</h4>
-            </CardImgTitle>
-            <p>
-              A Website is an extension of yourself and we can help you to express it properly.
-            </p>
-          </CardInfo>
-        </Card>
-        <Card>
-          <CardInfo>
-          <CardImgTitle>
-                <Bola>
-                  <IMG src={webdesign}></IMG>
-                </Bola>
-              <h4><Span>Web Design & Development</Span></h4>
-            </CardImgTitle>
-            <p>
-              A Website is an extension of yourself and we can help you to express it properly.
-            </p>
+              <Bola><IMG src={mobile} alt="Imagem de celular"></IMG></Bola>
+            </CardImgTitle>              
+            <h4>Mobile App Development</h4>
+            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
         <Card>
           <CardInfo>
             <CardImgTitle>
-                <Bola>
-                  <IMG src={dashboard}></IMG>
-                </Bola>
-               <h4>Software Testing Service</h4>
+              <Bola>
+                <IMG src={webdesign} alt="Imagem de website"></IMG>
+              </Bola>
+              
             </CardImgTitle>
-            <p>
-              A Website is an extension of yourself and we can help you to express it properly.
-            </p>
+            <h4><Span>Web Design & Development</Span></h4>
+            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+          </CardInfo>
+        </Card>
+        <Card>
+          <CardInfo>
+            <CardImgTitle>
+              <Bola>
+                <IMG src={dashboard} alt="Imagem de dashboard"></IMG>
+              </Bola>
+            </CardImgTitle>              
+            <h4>Software Testing Service</h4>
+            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
       </Slider>

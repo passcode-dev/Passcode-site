@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Button } from "../../Components/Buton";
 import main from "../../images/main.png";
 
-const Conteiner = styled.div` 
+const Conteiner = styled.div`
+    margin-top: 150px;
     display: flex;
-    align-items:center;
     justify-content: center;
     height: 546px;
     top: 148px;
@@ -45,6 +45,12 @@ const SpanP = styled.span`
     -webkit-text-fill-color: transparent;
     filter: brightness(1.2); /* Aumenta a intensidade da cor */
 `
+
+const SpanG=styled.span`
+    font-size: 55px;
+    font-weight: bold;
+
+`
 const SpanE = styled.span`
     font-family: "Inter";
     font-weight: bold;
@@ -63,22 +69,21 @@ const ConteinerImage = styled.div`
 `
 const Img = styled.img`
     width: 614px;
-    height: 546px;
 
 `
-export const Produtos = () => {
+export const Products = () => {
     return (
         <>
             <Conteiner>
                 <ConteinerText>
                     <HeaderText>
-                        <h1>Grandes <SpanP>Produtos</SpanP> são Criados por grandes <SpanE>equipes</SpanE></h1>
+                        <h1>Grandes <SpanP>Produtos</SpanP> são Criados por <SpanG>grandes</SpanG> <SpanE>equipes</SpanE></h1>
                         <p>Montamos e gerenciamos uma equipe de desenvolvedores de alto nível para transformar suas ideias em realidade.</p>
                     </HeaderText>
                     <Button>Vamos Começar</Button>
                 </ConteinerText>
                 <ConteinerImage>
-                    <Img src={main}></Img>
+                    <Img src={main} alt="Banner de apresentação"></Img>
                 </ConteinerImage>
             </Conteiner>
         </>

@@ -15,7 +15,7 @@ const Titulo=styled.div`
     width: 474px;
     height: 133px;
     gap: 20px;
-
+    margin-bottom: 30px;
     h2{
         font-family: Inter;
         font-weight: 400px;
