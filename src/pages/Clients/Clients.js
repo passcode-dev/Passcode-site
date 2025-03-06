@@ -32,7 +32,7 @@ const Span=styled.span`
     text-align: center;
 `
 
-export const Clients=()=>{
+export default function Clients(){
     return(
         <Body>
             <Divider/>

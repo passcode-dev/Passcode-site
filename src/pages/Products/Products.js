@@ -8,8 +8,6 @@ const Conteiner = styled.div`
     display: flex;
     justify-content: center;
     height: 546px;
-    top: 148px;
-    left: 104px;
 `
 const ConteinerText = styled.div`
     width: 531px;
@@ -71,7 +69,7 @@ const Img = styled.img`
     width: 614px;
 
 `
-export const Products = () => {
+export default function Products  ()  {
     return (
         <>
             <Conteiner>

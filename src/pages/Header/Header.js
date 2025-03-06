@@ -30,7 +30,7 @@ const StyledLink=styled(Link)`
  `
 
    
-export const Header = () => {
+export default function Header(){
     return (
         <>
         <Cabecalho>
@@ -38,7 +38,7 @@ export const Header = () => {
       
                 <StyledLink to="/">Inicio</StyledLink>
                 <StyledLink to="/">Lorem</StyledLink>
-                <StyledLink to="/">Trabalhe Conosco</StyledLink>
+                <StyledLink to="/WorkWithUs/WorkWithUs">Trabalhe Conosco</StyledLink>
     
             <Button>Fale Conosco</Button>
         </Cabecalho>

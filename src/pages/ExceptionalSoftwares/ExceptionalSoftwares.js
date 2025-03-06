@@ -149,7 +149,7 @@ export const IMG = styled.img`
     z-index: 0;
 `
 
-export const ExceptionalSoftwares = () => {
+export default function ExceptionalSoftwares  () {
     return (
         <>
 

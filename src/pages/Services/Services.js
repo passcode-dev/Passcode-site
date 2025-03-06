@@ -19,7 +19,7 @@ const Titulo=styled.div`
         color: #1A202C;
         margin-top: 50px;
 `
-export const Service = () => {
+export default function Service  () {
     return(
         <Page>
             <Titulo>
