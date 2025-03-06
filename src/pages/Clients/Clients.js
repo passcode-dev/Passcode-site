@@ -5,9 +5,6 @@ import { Divider } from "../../Components/Divider"
 
 const Body=styled.div`
     display: flex;
-    height: 346px;
-    top: 1425px;
-    left: 80px;
     align-items: center;
     flex-direction: column;
 `
