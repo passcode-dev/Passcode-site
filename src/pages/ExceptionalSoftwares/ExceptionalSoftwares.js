@@ -7,7 +7,7 @@ import ceo2 from "../../images/ceo2.png"
 import equipepc from "../../images/equipepc.jpg"
 import DemiMoore from "../../images/DemiMoore.png"
 import reuniao from "../../images/reuniao.jpg"
-import { BolaAmarela, BolaRosa } from "../../Components/Balls"
+import { BolaRosaEmbaixo,BolaAmarelaDiagSup,BolaRosaDiagSup,BolaAmarelaEmbaixo,BolaRosaEmcima,BolaAmarelaDiagInf } from "../../Components/Balls"
 
 export const Title = styled.div`
     display: flex;
@@ -136,10 +136,17 @@ export const ImgCeo = styled.img`
     height: 41px;
     border-radius: 50px;
 `
-export const IMG = styled.img`
+export const ConteinerImg=styled.div`
+    position:relative;
+    display: flex;
     width: 575px;
     height: 473px;
+    
+`
+export const IMG = styled.img`
+    object-fit: cover;
     border-radius: 10px;
+    z-index: 0;
 `
 
 export const ExceptionalSoftwares = () => {
@@ -170,10 +177,19 @@ export const ExceptionalSoftwares = () => {
                             </CeoTxt>
                         </CEO>
                     </ConteinerText>
-                    <IMG src={timeBoard}></IMG>
+                    <ConteinerImg>
+                        <IMG src={timeBoard}></IMG>
+                        <BolaAmarelaDiagSup/>
+                        <BolaRosaEmbaixo/>
+                    </ConteinerImg>
+                    
                 </Conteiner1>
                 <Conteiner1> 
-                    <IMG src={equipepc}></IMG>
+                    <ConteinerImg>
+                        <IMG src={equipepc}></IMG>
+                        <BolaAmarelaEmbaixo/>
+                        <BolaRosaDiagSup/>
+                     </ConteinerImg>
                     <ConteinerText>
                         <h3>Build the right team to scale</h3>
                         <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers</p>
@@ -208,7 +224,11 @@ export const ExceptionalSoftwares = () => {
                             </CeoTxt>
                         </CEO>
                     </ConteinerText>
-                    <IMG src={reuniao}></IMG>
+                    <ConteinerImg>
+                        <IMG src={reuniao}></IMG>
+                        <BolaAmarelaDiagInf/>
+                        <BolaRosaEmcima/>
+                    </ConteinerImg>
                 </Conteiner1>
             </Conteiner>
 
