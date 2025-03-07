@@ -8,11 +8,26 @@ const Conteiner = styled.div`
   margin-top: 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 150px;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 `;
+
+
 
 const ConteinerText = styled.div`
   width: 531px;
+
+  @media (max-width: 980px) {
+    width: 90%;
+  }
 `;
 
 const HeaderText = styled.div`
@@ -24,11 +39,22 @@ const HeaderText = styled.div`
   }
   p {
     font-family: "Inter";
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 36px;
   }
   padding-bottom: 30px;
+
+  @media (max-width: 980px) {
+    h1 {
+      font-size: 32px;
+      line-height: 50px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
 `;
 
 const SpanP = styled.span`
@@ -60,7 +86,31 @@ const SpanE = styled.span`
 
 const ConteinerImage = styled.div`
   width: 614px;
+
+  @media (max-width: 980px) {
+    width: 100%;
+    display: none;
+    justify-content: center;
+  }
 `;
+
+const ConteinerImage2 = styled.div`
+  width: 614px;
+  display: none;
+
+  @media (max-width: 980px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+const StyledButton=styled(Button)`
+  @media (max-width:800px) {
+    margin-top: 30px;
+    width: 100%;
+  }
+`
 
 export default function Products() {
   return (
@@ -97,7 +147,15 @@ export default function Products() {
                   nível para transformar suas ideias em realidade.
                 </p>
               </HeaderText>
-              <Button>Vamos Começar</Button>
+              <ConteinerImage2>
+              <GatsbyImage
+                image={mainSrc}
+                alt="Banner de apresentação"
+                className="max-w-full object-cover"
+                loading="lazy" // Ajuste para carregamento lazy
+              />
+            </ConteinerImage2>
+              <StyledButton>Vamos Começar</StyledButton>
             </ConteinerText>
             <ConteinerImage>
               <GatsbyImage

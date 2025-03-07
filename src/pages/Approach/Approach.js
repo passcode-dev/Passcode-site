@@ -20,20 +20,26 @@ const Page = styled.div`
     background-color: #F7F7FA;
 `
 
-const Title=styled.div`
+const Title = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 35px;
     align-items: center;
+    text-align: center;
     font-family: 'Inter';
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
-
-    p, span {
+    max-width: 500px;
+    
+    p {
         line-height: 1;
+        margin: 2px, 0;
     }
 
-`
+    @media (max-width: 800px) {
+        align-items: center;  
+    }
+`;
 
 const Border = styled.div`
   width: 69px;
@@ -46,9 +52,13 @@ const DivCards = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px; 
-
     margin-bottom: 100px;
-`
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
+`;
+
 
 const Cards = styled.div`
     display: flex;
@@ -134,7 +144,7 @@ const PadlockinImg = styled.img`
 export default function Approach() {
     return (
         <Page>
-            <Title><Border></Border><p>Nossa abordagem de </p><span>design e desenvolvimento</span></Title>
+            <Title><Border></Border><span>Nossa abordagem de design e desenvolvimento</span></Title>
 
             <DivCards>
                 <Cards>

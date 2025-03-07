@@ -9,6 +9,10 @@ const BolaAmarela=styled.div`
     -webkit-text-fill-color: transparent;
     overflow: hidden;
     z-index: -1;
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `
 
 const BolaRosa=styled.div`
@@ -20,37 +24,65 @@ const BolaRosa=styled.div`
     -webkit-text-fill-color: transparent;
     z-index: -1;
     overflow: hidden;
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `;
 
 export const BolaRosaEmbaixo=styled(BolaRosa)`
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `;
 
 export const BolaAmarelaDiagSup=styled(BolaAmarela)` //Bola Amarela Diagonal Superior esquerda
      top: -20px;
      left: -20px;
+
+     @media (max-width:1200px) {
+        display:none ;
+     }
 `;
 
 export const BolaRosaDiagSup=styled(BolaRosa)` ////Bola Rosa Diagonal Superior Direita
      top: -10px;
-     right: -145px;
+     right: -10px;
+
+     @media (max-width:1200px) {
+        display:none ;
+     }
 `
 
 export const BolaAmarelaEmbaixo=styled(BolaAmarela)` //Bola Amarela embaixo 
     bottom: -30px;
     left: 32%;
     transform: translateX(-50%);
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `
 
 export const BolaRosaEmcima=styled(BolaRosa)`
     top: -10px;
     right: 35%;
     transform: translateX(-50%);
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `
 
 export const BolaAmarelaDiagInf=styled(BolaAmarela)` //Bola Amarela Diagonal inferior Esquerda 
     bottom: -20px;
     left: -20px;
+
+    @media (max-width:1200px) {
+        display:none ;
+     }
 `

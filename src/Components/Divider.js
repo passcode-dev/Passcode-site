@@ -12,7 +12,8 @@ export const Divider = styled.hr`
 export const Dividervertical = styled.hr`
     height: 87px; /* Faz o divider ocupar toda a altura disponível */
     border-top: none; /* Remove a borda superior */
-    border-left: 5px solid transparent;
+    border-left: 3px solid transparent;
+    
     border-right:none; /* Usa a borda esquerda para criar a linha vertical */
     border-image: linear-gradient(180deg, #F76680 0%, #57007B 100%) 1; /* Aplica o gradiente na vertical */
     margin:0;

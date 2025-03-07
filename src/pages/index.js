@@ -27,6 +27,7 @@ export default function Home() {
         <Products />
         <Service />
         <Clients/>
+        <ExceptionalSoftwares/>
         <Approach/>
         <DevelopmentProcess />
         <Footer />

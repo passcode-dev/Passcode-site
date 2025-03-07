@@ -9,13 +9,26 @@ const Page = styled.div`
     width: 100%;
     border-top: 1px solid #CBD5E0;
     border-bottom: 1px solid #CBD5E0;
+
+    @media (max-width:800px) {
+        flex-direction: column;
+    }
+    
 `
 
 const Footer = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
     justify-content: space-between;
     font-family: 'inter';
-    width: 60%;
+    
+
+    @media (max-width:800px) {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+ 
 `
 
 
@@ -23,7 +36,6 @@ const Footer = styled.div`
 const FooterDivision = styled.div`
     display: flex;
     flex-direction: column;
-
 
     span{
         font-family: 'Inter';
@@ -36,6 +48,7 @@ const FooterDivision = styled.div`
 const FooterDivisionLink = styled.div`
     display: flex;
     flex-direction: row ;
+
 `
 
 
@@ -107,6 +120,12 @@ const CopyRight = styled.div`
         font-size: 16px;
         color: #4A5568;
         font-family:'inter' ;
+    }
+
+    @media (max-width:800px) {
+        span{
+            font-size: 12px;
+        }
     }
 `
 export default function footer() {

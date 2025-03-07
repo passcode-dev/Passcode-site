@@ -9,10 +9,10 @@ const Body=styled.div`
     flex-direction: column;
 `
 const Titulo=styled.div`
-    width: 474px;
+    max-width: 500px;
     height: 133px;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     h2{
         font-family: Inter;
         font-weight: 400px;
