@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import webdesign from "../images/webdesign.png"
-import mobile from "../images/mobile.png"
-import dashboard from "../images/DashBoard.png"
+import webdesign from "../images/webdesign.webp"
+import mobile from "../images/mobile.webp"
+import dashboard from "../images/DashBoard.webp"
 
 const CarouselContainer = styled.div`
   width: 80%;

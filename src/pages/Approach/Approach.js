@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components'
-import rocket from '../../images/rocket.png'
-import code from '../../images/code.png'
-import heart from '../../images/heart.png'
-import shield from '../../images/shield.png'
-import success from '../../images/success.png'
+import rocket from '../../images/rocket.webp'
+import code from '../../images/code.webp'
+import heart from '../../images/heart.webp'
+import shield from '../../images/shield.webp'
+import success from '../../images/success.webp'
 import padlock from '../../images/padlock.png'
 
 

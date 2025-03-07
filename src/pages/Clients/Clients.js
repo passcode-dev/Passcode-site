@@ -30,6 +30,7 @@ const Span=styled.span`
     line-height: 55px;
     letter-spacing: 0%;
     text-align: center;
+    
 `
 
 export default function Clients(){

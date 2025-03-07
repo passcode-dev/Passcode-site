@@ -1,12 +1,12 @@
 import * as React from "react"
 import styled from "styled-components"
 import { Divider,Dividervertical } from "../../Components/Divider"
-import timeBoard from "../../images/timeBoard.jpg"
-import ceo1 from "../../images/ceo1.png"
-import ceo2 from "../../images/ceo2.png"
-import equipepc from "../../images/equipepc.jpg"
-import DemiMoore from "../../images/DemiMoore.png"
-import reuniao from "../../images/reuniao.jpg"
+import timeBoard from "../../images/timeBoard.webp"
+import ceo1 from "../../images/ceo1.webp"
+import ceo2 from "../../images/ceo2.webp"
+import equipepc from "../../images/equipepc.webp"
+import DemiMoore from "../../images/DemiMoore.webp"
+import reuniao from "../../images/reuniao.webp"
 import { BolaRosaEmbaixo,BolaAmarelaDiagSup,BolaRosaDiagSup,BolaAmarelaEmbaixo,BolaRosaEmcima,BolaAmarelaDiagInf } from "../../Components/Balls"
 
 export const Title = styled.div`
@@ -129,7 +129,6 @@ export const P3 = styled.p`
     letter-spacing: 0%;
     margin:0;
     color: #718096;
-
 `
 export const ImgCeo = styled.img`
     width: 41px;
@@ -141,12 +140,12 @@ export const ConteinerImg=styled.div`
     display: flex;
     width: 575px;
     height: 473px;
-    
 `
 export const IMG = styled.img`
     object-fit: cover;
     border-radius: 10px;
     z-index: 0;
+
 `
 
 export default function ExceptionalSoftwares  () {

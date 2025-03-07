@@ -8,6 +8,7 @@ import  ExceptionalSoftwares  from "./ExceptionalSoftwares/ExceptionalSoftwares"
 import Approach from "./Approach/Approach";
 import DevelopmentProcess from "../pages/DevelopmentProcess/DevelopmentProcess";
 import Footer from './footer/footer';
+import "@fontsource/inter"
 
 
 export { Head } from '../Head';
@@ -28,7 +29,6 @@ export default function Home() {
         <Products />
         <Service />
         <Clients/>
-        <ExceptionalSoftwares/>
         <Approach/>
         <DevelopmentProcess />
         <Footer />

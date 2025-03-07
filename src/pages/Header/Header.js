@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import PassCode from "../../images/Logo.png";
+import PassCode from "../../images/Logo.webp";
 import {Button} from "../../Components/Buton"
 import {Link} from 'gatsby'
 

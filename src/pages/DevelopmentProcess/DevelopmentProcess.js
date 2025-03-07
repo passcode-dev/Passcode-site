@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Tropy from '../../images/tropy.png'
 import { StaticImage } from 'gatsby-plugin-image'
 
 
@@ -154,7 +153,7 @@ export default function DevelopmentProcess() {
                 <MarkerBottom />
 
             </TimelineContainer>
-            <StaticImage src="../../images/tropy.png" alt="Imagem de troféu" />
+            <StaticImage src="../../images/tropy.webp" alt="Imagem de troféu" />
 
             </Div>
             
