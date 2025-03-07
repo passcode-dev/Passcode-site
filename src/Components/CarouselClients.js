@@ -70,7 +70,7 @@ const CardImgTitle = styled.div`
   width: 271px;
   height: 98px;
   
-  h4 {
+  h2 {
     font-size: 20px; 
     line-height: 27.3px;
     font-weight: 600px;

@@ -55,18 +55,17 @@ const CardInfo = styled.div`
     line-height:20px;
     
   }
+    
+  h2 {
+    font-size: 20px; 
+    font-weight: 600px;
+    color: #333;
+  }
 `;
 const CardImgTitle = styled.div` 
 
   width: 271px;
   height: 98px;
-  
-  h4 {
-    font-size: 20px; 
-    line-height: 27.3px;
-    font-weight: 600px;
-    color: #333;
-  }
 `
 const Bola = styled.div`
   width: 58px;
@@ -118,7 +117,7 @@ export const Carousel = () => {
             <CardImgTitle>
               <Bola><IMG src={mobile} alt="Imagem de celular"></IMG></Bola>
             </CardImgTitle>              
-            <h4>Mobile App Development</h4>
+            <h2>Mobile App Development</h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
@@ -130,7 +129,7 @@ export const Carousel = () => {
               </Bola>
               
             </CardImgTitle>
-            <h4><Span>Web Design & Development</Span></h4>
+            <h2><Span>Web Design & Development</Span></h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
@@ -141,7 +140,7 @@ export const Carousel = () => {
                 <IMG src={dashboard} alt="Imagem de dashboard"></IMG>
               </Bola>
             </CardImgTitle>              
-            <h4>Software Testing Service</h4>
+            <h2>Software Testing Service</h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>

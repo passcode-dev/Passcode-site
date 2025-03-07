@@ -104,7 +104,7 @@ const Cards = styled.div`
         font-weight: bold;
     }
     p{
-        color:#718096 ;
+        color:#454545 ;
     }
 `
 

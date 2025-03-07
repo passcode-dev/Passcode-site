@@ -13,22 +13,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.2.5",
-    "bootstrap-icons": "^1.11.3",
     "gatsby": "^5.14.1",
-    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-react-helmet": "^6.14.0",
     "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-styled-components": "^6.14.0",
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
     "lucide-react": "^0.477.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-icon": "^1.0.0",
-    "react-icons": "^5.5.0",
-    "react-modal": "^3.16.3",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.15"

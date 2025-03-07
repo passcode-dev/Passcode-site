@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import * as React from 'react'
-import '../global.css'
-import "@fontsource/inter"
 
 const Page = styled.div`
     display: flex;

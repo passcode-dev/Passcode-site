@@ -8,9 +8,7 @@ import  ExceptionalSoftwares  from "./ExceptionalSoftwares/ExceptionalSoftwares"
 import Approach from "./Approach/Approach";
 import DevelopmentProcess from "../pages/DevelopmentProcess/DevelopmentProcess";
 import Footer from './footer/footer';
-import "@fontsource/inter"
-
-
+import global from '../Css/global.css';
 export { Head } from '../Head';
 
 const Body = styled.div`
