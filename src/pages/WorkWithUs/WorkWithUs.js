@@ -25,14 +25,16 @@ const Conteiner = styled.div`
     margin-top: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 546px;
-    width: 800px;
+    max-height: 546px;
+    max-width: 100%;
     
 `
 const ConteinerText = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-bottom: 18px;
     h1{
@@ -43,7 +45,7 @@ const ConteinerText = styled.div`
         line-height: 71px;
     }
     p{
-        width: 600px;
+        max-width: 600px;
         text-align: center;
         font-family: Inter;
         font-weight: 400;
@@ -54,7 +56,7 @@ const ConteinerText = styled.div`
 `
 
 const IMG = styled.img`
-    width: 100%;
+    max-width: 80%;
 `
 
 const JoinUs = styled.div`
@@ -185,6 +187,11 @@ const Modal = styled.div`
     color: white;
     opacity: 0;
     animation: ${slideDown} 0.4s ease-out forwards; // Aplica a animação
+
+    @media (max-width:800px) {
+        width: 80%;
+        
+    }
 `
 
 const Head = styled.div`

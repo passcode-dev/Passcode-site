@@ -5,7 +5,9 @@
     font-weight: 400;
     font-display: swap;
   }
-  
+  *{
+     margin:0px;
+  }
   @font-face {
     font-family: 'Inter';
     src: url('/fonts/inter/Inter-Italic.woff2') format('woff2'),
