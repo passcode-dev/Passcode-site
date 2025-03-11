@@ -164,7 +164,7 @@ export default function footer() {
                                 <h2>Canais</h2>
                             </TitleFooter>
                             <a href="/">Suporte</a>
-                            <a href="/"> Fale conosco</a>
+                            <a href="/ContactUs/ContactUs"> Fale conosco</a>
                             <a href="/">Auditoria</a>
 
                         </FooterDivision>
