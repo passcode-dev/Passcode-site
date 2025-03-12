@@ -117,7 +117,6 @@ const Matters = styled.div`
   width: 100%;
   flex-direction:column;
   justify-content: center;
-  margin-top: 30px;
 
   span{
     margin-top: 30px;

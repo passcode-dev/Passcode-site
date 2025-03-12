@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import Header from "../Header/Header"
+import Footer from '../footer/footer'
 import { Button } from "../../Components/Buton";
 import grupo from "../../images/grupo.png"
 import { useState } from "react";
@@ -29,6 +30,11 @@ const Conteiner = styled.div`
     flex-direction: column;
     max-height: 546px;
     max-width: 100%;
+    margin-bottom: 200px;
+    @media (max-width:900px) {
+        margin-top:50px;
+        margin-bottom: 100px;
+    }
     
 `
 const ConteinerText = styled.div`
@@ -39,7 +45,7 @@ const ConteinerText = styled.div`
     margin-bottom: 18px;
     h1{
         margin:0;
-        font-family: Inter;
+        font-family: "Inter";
         font-weight: 300;
         font-size: 45px;
         line-height: 71px;
@@ -53,10 +59,32 @@ const ConteinerText = styled.div`
         line-height: 36px;
         margin-bottom: 50px;
     }
+
+    @media (max-width:900px) {
+
+        h1{
+            text-align: center;
+        }
+    }
 `
+const SpanP = styled.span`
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 71px;
+  background: linear-gradient(180deg, #de4396 10%, #a83284 50%, #de4396 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.2);
+`;
+
 
 const IMG = styled.img`
     max-width: 80%;
+    @media (max-width:900px) {
+        max-width: 100%;
+    }
 `
 
 const JoinUs = styled.div`
@@ -70,6 +98,13 @@ const JoinUs = styled.div`
         font-weight: 700;
         font-size: 40px;
         line-height: 20px;
+    }
+
+    @media (max-width:900px) {
+        h1{
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
     }
 `
 const Label = styled.label`
@@ -138,6 +173,11 @@ const Conteinerinput = styled.div`
         color:lightgray;
         margin: 0;
     }
+    @media (max-width:900px) {
+        p{
+            text-align: center;
+        }
+    }
 `
 const PlaceInput = styled.div`
     display: flex;
@@ -170,6 +210,7 @@ const Overlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99;
 `;
 
 
@@ -226,7 +267,7 @@ export default function WorkWithUs() {
                             <Sair size={25} onClick={() => setOpen(false)} />
                         </Head>
                         <JoinUs>
-                            <h1>Join Us today 👋</h1>
+                            <h1>Join Us today👋</h1>
                             <Conteinerinput>
                                 <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
                                 <PlaceInput>
@@ -258,12 +299,13 @@ export default function WorkWithUs() {
                 <Header />
                 <Conteiner>
                     <ConteinerText>
-                        <h1>Junte-se ao nosso Grupo</h1>
+                        <h1>Junte-se ao nosso <SpanP>Grupo</SpanP></h1>
                         <p>We love what we do and we do it with passion. We value the experimentation of the message and smart incentives.</p>
                         <ButtonMod onClick={() => setOpen(true)}>See Current Openings</ButtonMod>
                     </ConteinerText>
                     <IMG src={grupo}></IMG>
                 </Conteiner>
+                <Footer/>
             </Body>
 
 
