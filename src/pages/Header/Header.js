@@ -260,7 +260,7 @@ export default function Header() {
 
                 <DivLinks>
                     <StyledLink to="/">Inicio</StyledLink>
-                    <StyledLink to="/">Quem somos</StyledLink>
+                    <StyledLink to="/AboutUs/AboutUs">Quem somos</StyledLink>
                     <StyledLink to="/WorkWithUs/WorkWithUs">Trabalhe Conosco</StyledLink>
                 </DivLinks>
 
