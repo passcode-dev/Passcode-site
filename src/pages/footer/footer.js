@@ -153,7 +153,7 @@ export default function footer() {
                                 <h2>Links</h2>
                             </TitleFooter>
                             <a href="/">Inicio</a>
-                            <a href="/OtherPages/JoinOurTeam">Sobre nós</a>
+                            <a href="/">Sobre nós</a>
                             <a href="/WorkWithUs/WorkWithUs">Trabalhe Conosco</a>
 
                         </FooterDivision>
