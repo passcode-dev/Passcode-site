@@ -1,141 +1,133 @@
-
-
-
-
-
-
-
-
-
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useRef } from "react";
 import styled from "styled-components";
-import webdesign from "../images/webdesign.webp"
-import mobile from "../images/mobile.webp"
-import dashboard from "../images/DashBoard.webp"
-
-const CarouselContainer = styled.div`
-  width: 80%;
-  margin: auto;
-  padding: 40px 0;
-
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-  }
-
-  .slick-dots li.slick-active button:before {
-    color: #D81B60;
-  }
-`;
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Card = styled.div`
-  display:flex!important;
-  background: #fff;
-  padding: 20px;
-
+  display: flex !important;
+  flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
-  align-items:center;
-  width: 333px;
-  height: 287px;
-
+  align-items: center;
+  width: 100%;
   transition: transform 0.3s ease-in-out;
+  
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 `;
 
 const CardInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 310px;
-  height: 210px;
-  font-family:'inter';
-
-  p {
-    font-size: 14px; 
-    color: #666;
-    line-height:20px;
-    
-  }
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #718096;
+  line-height: 36px;
+  padding: 50px;
+  border-radius: 8px;
+  max-width: 600px;
 `;
-const CardImgTitle = styled.div` 
 
-  width: 271px;
-  height: 98px;
-  
-  h2 {
-    font-size: 20px; 
-    line-height: 27.3px;
-    font-weight: 600px;
-    color: #333;
-  }
-`
-const Bola = styled.div`
-  width: 58px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const SwiperStyled = styled(Swiper)`
+  max-width: 100%;
+
+`;
+
+const NavigationButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: #57007B;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, #57007B border-box;
+  padding: 8px 10px;
   border-radius: 100%;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #F76680, #57007B) border-box;
-  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 10px;
+  
+  ${({ prev }) => prev && `left: 10px;`}
+  ${({ next }) => next && `right: 10px;`}
+
+  @media (max-width:950px) {
+    display:none;
+  }
 `;
-
-const IMG = styled.img`
-  width: 34px;
-  height: 34px;
-  top: 12px;
-  left: 12px;
-
-`
-const Span = styled.span`
-    font-family: "Inter";
-    font-weight: bold;
-    font-size: 20px; 
-    line-height: 27.3px;
-    letter-spacing: 0%;
-    background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-`
-
-
 
 export const CarouselClients = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "40px",
+  const swiperRef = useRef(null);
+
+  const goNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
   };
 
+  const goPrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+  const StyledDiv = styled.div`
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+`
+
   return (
-    <CarouselContainer>
-      <Slider {...settings}>
-        
-        <Card>
-          <CardInfo>
-            <p>Sem dúvida, recomendo a Passcode, que se tornou não apenas uma prestadora de serviços, mas uma agregadora de valor para o nosso negócio. Uma das melhores empresas com as quais já trabalhei até agora.</p>
-          </CardInfo>
-        </Card>
+    <StyledDiv>
+      <NavigationButton prev onClick={goPrev}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+      </NavigationButton>
 
-        <Card>
-          <CardInfo>
-            <p>Sem dúvida, recomendo a Passcode, que se tornou não apenas uma prestadora de serviços, mas uma agregadora de valor para o nosso negócio. Uma das melhores empresas com as quais já trabalhei até agora.</p>
-          </CardInfo>
-        </Card>
+      <SwiperStyled
+        spaceBetween={50}
+        slidesPerView={1}
+        loop={true}
+        pagination={{ clickable: true }}
+        navigation={false}
+        modules={[Navigation]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+      >
+        <SwiperSlide>
+          <Card>
+            <CardInfo>
+              “Sem dúvida, recomendo a Passcode, que se tornou não apenas uma prestadora de serviços, mas uma agregadora de valor para o nosso negócio. Uma das melhores empresas com as quais já trabalhei até agora.”
+            </CardInfo>
+          </Card>
+        </SwiperSlide>
 
-      </Slider>
-    </CarouselContainer>
+        <SwiperSlide>
+          <Card>
+            <CardInfo>
+              “A equipe da Passcode foi incrível do início ao fim. Profissionalismo, comprometimento e entrega impecável. Com certeza continuaremos trabalhando juntos!”
+            </CardInfo>
+          </Card>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Card>
+            <CardInfo>
+              “O suporte técnico e a atenção aos detalhes que a Passcode oferece fazem toda a diferença. Muito satisfeitos com os serviços prestados!”
+            </CardInfo>
+          </Card>
+        </SwiperSlide>
+      </SwiperStyled>
+
+      <NavigationButton next onClick={goNext}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg>
+      </NavigationButton>
+    </StyledDiv>
+
   );
 };

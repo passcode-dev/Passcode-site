@@ -222,7 +222,7 @@ export default function ContactUS() {
               </PlaceInput>
 
               <PlaceInput>
-                <Label>Sobre nome</Label>
+                <Label>Sobrenome</Label>
                 <Input></Input>
               </PlaceInput>
 

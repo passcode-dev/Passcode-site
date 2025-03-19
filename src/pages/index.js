@@ -26,7 +26,7 @@ export default function Home() {
         <Header />
         <Products />
         <Service />
-        <Clients/>
+        {/* <Clients/> */}
         <ExceptionalSoftwares/>
         <Approach/>
         <DevelopmentProcess />

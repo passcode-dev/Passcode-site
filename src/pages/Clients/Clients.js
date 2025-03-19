@@ -7,6 +7,13 @@ const Body=styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+    @media (max-width:950px) {
+        margin-bottom: 100px;
+
+    }
 `
 const Titulo=styled.div`
     max-width: 500px;

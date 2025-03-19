@@ -1,5 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
@@ -7,26 +13,37 @@ import webdesign from "../images/webdesign.webp"
 import mobile from "../images/mobile.webp"
 import dashboard from "../images/DashBoard.webp"
 
-const CarouselContainer = styled.div`
-  width: 80%;
-  margin: auto;
-  padding: 40px 0;
 
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-  }
 
-  .slick-dots li.slick-active button:before {
-    color: #D81B60;
+const Card = styled(SwiperSlide)`
+  display:flex!important;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  border-radius: 10px;
+  justify-content: center;
+  align-items:center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
   }
 `;
 
-const Card = styled.div`
+const SwiperStyled = styled(Swiper)`
+  max-width: 70%;
+
+  @media (max-width:900px) {
+    max-width: 100%;
+  }
+`;
+
+const CardInfo = styled.div`
   display:flex!important;
   background: #fff;
   padding: 20px;
-
+  flex-direction:column;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
@@ -38,15 +55,7 @@ const Card = styled.div`
   &:hover {
     transform: scale(1.01);
   }
-`;
 
-const CardInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 310px;
-  height: 210px;
   font-family:'inter';
 
   p {
@@ -62,6 +71,9 @@ const CardInfo = styled.div`
     color: #333;
   }
 `;
+
+
+
 const CardImgTitle = styled.div` 
 
   width: 271px;
@@ -99,52 +111,64 @@ const Span = styled.span`
 
 
 export const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "40px",
-  };
 
   return (
-    <CarouselContainer>
-      <Slider {...settings}>
+    <SwiperStyled
+      spaceBetween={50}
+      slidesPerView={3}
+      loop={true}
+      pagination={{ clickable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+      breakpoints={{
+        1330: { slidesPerView: 3 }, // Para telas maiores (desktop)
+        900: { slidesPerView: 2 },  // Para tablets
+        300: { slidesPerView: 1 },  // Para celulares
+      }}
+    >
+
+
+      <SwiperSlide>
         <Card>
           <CardInfo>
             <CardImgTitle>
               <Bola><IMG src={mobile} alt="Imagem de celular"></IMG></Bola>
-            </CardImgTitle>              
-            <h2>Mobile App Development</h2>
+            </CardImgTitle>
+            <h2><Span>Mobile App Development</Span></h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <Card>
           <CardInfo>
             <CardImgTitle>
               <Bola>
                 <IMG src={webdesign} alt="Imagem de website"></IMG>
               </Bola>
-              
+
             </CardImgTitle>
             <h2><Span>Web Design & Development</Span></h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <Card>
           <CardInfo>
             <CardImgTitle>
               <Bola>
                 <IMG src={dashboard} alt="Imagem de dashboard"></IMG>
               </Bola>
-            </CardImgTitle>              
-            <h2>Software Testing Service</h2>
+            </CardImgTitle>
+            <h2><Span>Software Testing Service</Span></h2>
             <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
           </CardInfo>
         </Card>
-      </Slider>
-    </CarouselContainer>
+      </SwiperSlide>
+
+    </SwiperStyled>
   );
 };

@@ -52,9 +52,6 @@ export const Conteiner1 = styled.div`
 export const ConteinerText = styled.div`
     max-width: 524px;
     
-    
-
-
     @media (max-width:1200px) {
         order: 2;
     }
@@ -65,6 +62,7 @@ export const ConteinerText = styled.div`
         line-height: 38.09px;
         letter-spacing: 0%;
         text-align: left;
+        margin-top: 20px;
     }
 
     p{

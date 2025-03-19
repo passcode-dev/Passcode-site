@@ -117,13 +117,15 @@ export default function Products() {
     <StaticQuery
       query={graphql`
         query {
-          mainImage: file(relativePath: { eq: "main.webp" }) {
+          mainImage: file(relativePath: { eq: "productsImage.webp" }) {
             childImageSharp {
               gatsbyImageData(
-                width: 614
-                height: 442
+                width: 921
+                height: 572
                 layout: CONSTRAINED
                 placeholder: BLURRED
+                
+                quality:100
               )
             }
           }

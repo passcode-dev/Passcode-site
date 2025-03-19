@@ -8,8 +8,7 @@ const Page = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 
     hr{
         border: 1px solid red;

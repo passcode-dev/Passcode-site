@@ -8,7 +8,6 @@ const Page = styled.div`
     align-items: center;
     width: 100%;
     border-top: 1px solid #CBD5E0;
-    border-bottom: 1px solid #CBD5E0;
 
     @media (max-width:800px) {
         flex-direction: column;
@@ -115,7 +114,7 @@ const CopyRight = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 40px;
 
     span{

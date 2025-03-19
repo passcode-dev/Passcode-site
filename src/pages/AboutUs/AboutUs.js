@@ -38,6 +38,7 @@ const ConteinerImg = styled.div`
 
     @media (max-width:1200px) {
         order: 1;
+        margin-bottom: 50px;
     }
 `
 
@@ -52,7 +53,21 @@ export const IMG = styled.img`
 const ContainerTitle = styled.div`
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+
+    h1{
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 38.09px;
+        letter-spacing: 0%;
+        text-align: left;   
+    }
+
+
     @media (max-width:1200px) {
+        margin-bottom: 30px;
+
         h1{
             background: linear-gradient(180deg, #de4396 10%, #a83284 50%, #de4396 90%);
              background-clip: text;
@@ -60,24 +75,17 @@ const ContainerTitle = styled.div`
             -webkit-text-fill-color: transparent;
             filter: brightness(1.2);
             text-align: center;
+            
         }
     }
-    h1{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 38.09px;
-        letter-spacing: 0%;
-        text-align: left;
-
-        
-    }
+    
 `
 const Conteiner1 = styled.div`
     display:flex;
     align-items: stretch;
     justify-content:space-evenly;
     padding: 20px 40px 20px 40px;
+    margin-bottom: 50px;
     @media (max-width:1200px) {
         flex-direction: column;
         align-items: center;
@@ -110,20 +118,32 @@ const ConteinerText = styled.div`
         letter-spacing: 0%;
         text-align: left;
     }
-`
+`;
+
+
+const SpanP = styled.span`
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 71px;
+  background: linear-gradient(180deg, #de4396 10%, #a83284 50%, #de4396 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.2);
+`;
+
+
 export default function AboutUs() {
     return (
         <Body>
             <Header />
             <Conteiner>
+
                 <ContainerTitle>
-                    <h1>Quem somos</h1>
+                    <h1>O que é a <SpanP>Passcode</SpanP> ?</h1>
                 </ContainerTitle>
-                <Conteiner1>
-                    <ConteinerText>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </ConteinerText>
-                </Conteiner1>
+
                 <Conteiner1>
                     <ConteinerText>
                         <h3>Nosso Principal Objetivo</h3>
@@ -133,6 +153,7 @@ export default function AboutUs() {
                         <IMG src={Aboutus}></IMG>
                     </ConteinerImg>
                 </Conteiner1>
+
                 <Conteiner1>
                     <ConteinerImg>
                         <IMG src={pauta}></IMG>
