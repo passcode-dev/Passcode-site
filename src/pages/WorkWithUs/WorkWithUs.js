@@ -23,12 +23,10 @@ const ButtonEnviar = styled(Button)`
     margin: 0;
 `
 const Conteiner = styled.div`
-    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-height: 546px;
     max-width: 100%;
     margin-bottom: 200px;
     @media (max-width:900px) {
@@ -87,7 +85,7 @@ const IMG = styled.img`
     }
 `
 
-const JoinUs = styled.div`
+const JoinUs = styled.form`
     display: flex;
     padding: 15px 10px 0 0;
     justify-content: center;
@@ -267,29 +265,34 @@ export default function WorkWithUs() {
                             <Sair size={25} onClick={() => setOpen(false)} />
                         </Head>
                         <JoinUs>
-                            <h1>Join Us today👋</h1>
+                            <h1>Junte-se a nós👋</h1>
                             <Conteinerinput>
-                                <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                                <p>Preencha o formulário abaixo para se candidatar:</p>
+                                
                                 <PlaceInput>
-                                    <Label>First & Last Name</Label>
-                                    <Input type="text" placeholder="i.e. Davon Lean"></Input>
+                                    <Label>Nome Completo</Label>
+                                    <Input type="text" required placeholder="Ex: Leonardo Ribeiro"></Input>
                                 </PlaceInput>
+                                
                                 <PlaceInput>
-                                    <Label>Email Address</Label>
-                                    <Input type="text" placeholder="i.e. Davon@gmail.com"></Input>
+                                    <Label>Endereço de E-mail</Label>
+                                    <Input type="email" required placeholder="Ex: leonardo@gmail.com"></Input>
                                 </PlaceInput>
-
 
                                 {/* Input de Arquivo */}
                                 <FileInputWrapper>
-                                    <HiddenInput id="fileUpload" type="file" onChange={handleFileChange} />
+                                    <HiddenInput id="fileUpload" required type="file" onChange={handleFileChange} />
                                     <FileLabel htmlFor="fileUpload">
-                                        <PlaceholderText> {fileName ? fileName : <>Coloque seu curriculo aqui <Upload style={{ marginRight: "10px" }} /> </>}</PlaceholderText>
+                                        <PlaceholderText>
+                                            {fileName ? fileName : <>Coloque seu currículo aqui <Upload style={{ marginRight: "10px" }} /></>}
+                                        </PlaceholderText>
                                     </FileLabel>
                                 </FileInputWrapper>
+
                                 <ButtonEnviar>ENVIAR</ButtonEnviar>
                             </Conteinerinput>
                         </JoinUs>
+
                     </Modal>
                 </Overlay>
             )
@@ -300,8 +303,8 @@ export default function WorkWithUs() {
                 <Conteiner>
                     <ConteinerText>
                         <h1>Junte-se ao nosso <SpanP>Grupo</SpanP></h1>
-                        <p>We love what we do and we do it with passion. We value the experimentation of the message and smart incentives.</p>
-                        <ButtonMod onClick={() => setOpen(true)}>See Current Openings</ButtonMod>
+                        <p>Valorizamos a experimentação criativa e incentivamos ideias inovadoras. Se você é movido por desafios e busca um ambiente estimulante, venha fazer parte do nosso time e crescer junto conosco. Aqui, as possibilidades são infinitas!</p>
+                        <ButtonMod onClick={() => setOpen(true)}>Junte-se a nós</ButtonMod>
                     </ConteinerText>
                     <IMG src={grupo}></IMG>
                 </Conteiner>

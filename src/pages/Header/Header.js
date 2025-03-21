@@ -169,9 +169,9 @@ const Sair = styled(X)`
 `;
 export default function Header() {
     const [open, setOpen] = React.useState(false);
-    const navigateContact = () => {
-        navigate("/ContactUs/ContactUs");
-    }
+    // const navigateContact = () => {
+    //     navigate("/ContactUs/ContactUs");
+    // }
     return (
         <>
             <Cabecalho>
@@ -198,7 +198,7 @@ export default function Header() {
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 href="/ContactUs/ContactUs/">Fale Conosco</StyledLink2>
+                                        <StyledLink2 href="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">Fale Conosco</StyledLink2>
                                     </PlaceText>
 
                                 </Conteinerinput>
@@ -216,7 +216,9 @@ export default function Header() {
                     <StyledLink to="/AboutUs/AboutUs">Quem somos</StyledLink>
                     <StyledLink to="/WorkWithUs/WorkWithUs">Trabalhe Conosco</StyledLink>
                 </DivLinks>
-                <ButtonPrinc onClick={navigateContact}>Fale Conosco</ButtonPrinc>
+                <ButtonPrinc onClick={() => window.open("https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>
+                Fale Conosco
+                </ButtonPrinc>
             </Cabecalho>
         </>
     );

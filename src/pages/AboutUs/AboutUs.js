@@ -147,7 +147,7 @@ export default function AboutUs() {
                 <Conteiner1>
                     <ConteinerText>
                         <h3>Nosso Principal Objetivo</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>A Passcode é uma empresa especializada no desenvolvimento de soluções digitais inovadoras para o mercado atual. Desde sua fundação, nossa missão tem sido fornecer tecnologias avançadas que ajudam empresas de diferentes setores a superar desafios complexos de forma eficiente e segura. Com um foco claro em inovação, procuramos não apenas entender as necessidades de nossos clientes, mas também antecipar as mudanças do mercado e proporcionar soluções que atendam às demandas de um mundo digital em constante evolução. Estamos comprometidos com a excelência em cada etapa do desenvolvimento, garantindo produtos de alta qualidade que ajudam as empresas a alcançar novos patamares de sucesso.</p>
                     </ConteinerText>
                     <ConteinerImg>
                         <IMG src={Aboutus}></IMG>
@@ -159,8 +159,8 @@ export default function AboutUs() {
                         <IMG src={pauta}></IMG>
                     </ConteinerImg>
                     <ConteinerText>
-                        <h3>Nosso Principal Objetivo</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h3>Nossa Visão e Valores</h3>
+                        <p>Ao longo dos anos, a Passcode se consolidou como uma referência em desenvolvimento de software. Nossa visão é ser reconhecida como uma empresa líder em soluções digitais, focada em melhorar a eficiência, segurança e escalabilidade das operações de nossos clientes. Acreditamos que a verdadeira inovação só é alcançada quando existe uma profunda colaboração entre nossa equipe e nossos parceiros. Nossos valores estão enraizados no compromisso com a transparência, ética e qualidade, trabalhando sempre para entregar resultados que superem as expectativas e gerem impactos positivos no mercado. Em tudo o que fazemos, buscamos sempre a excelência e a evolução constante, com uma forte ênfase em criar soluções que sejam sustentáveis e adaptáveis ao futuro.</p>
                     </ConteinerText>
                 </Conteiner1>
             </Conteiner>

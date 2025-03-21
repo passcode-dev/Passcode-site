@@ -149,31 +149,29 @@ export default function Approach() {
             <DivCards>
                 <Cards>
                     <RocketImg src={rocket} alt="Imagem de foguete"></RocketImg>
-                    <span><h2>UX Driven Engineering</h2>Unlike other companies, we are a <span class="text-blue-500">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Engenharia Orientada ao UX</h2>Ao contrário de outras empresas, somos uma companhia focada no design de experiência do usuário desde o início. Nossos projetos são guiados por designers especializados, garantindo que o design e a experiência se traduzam de maneira perfeita para o código.</span>
                 </Cards>
                 <Cards>
                     <CodeImg src={code} alt="Imagem de código"></CodeImg>
-                    <span><h2>Developing Shared Understanding</h2>Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Desenvolvendo um Entendimento Compartilhado</h2>Nosso processo começa com uma colaboração intensa entre equipes de design e desenvolvimento, criando um entendimento claro e compartilhado do que precisa ser alcançado. Isso nos permite traduzir a visão do cliente de forma eficiente e eficaz.</span>
                 </Cards>
                 <Cards>
                     <HeartImg src={heart} alt="Imagem de coração"></HeartImg>
-                    <span><h2>Proven Experience and Expertise</h2>Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Experiência e Expertise Comprovadas</h2>Contamos com uma equipe experiente e qualificada para lidar com as complexidades do design e desenvolvimento, sempre mantendo o foco na experiência do usuário. Nosso compromisso é oferecer soluções que não apenas atendem, mas superam as expectativas dos nossos clientes.</span>
                 </Cards>
                 <Cards>
                     <ShieldImg src={shield} alt="Imagem de escudo"></ShieldImg>
-                    <span><h2>Security & Intellectual Property (IP)</h2>Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Segurança e Propriedade Intelectual (IP)</h2>A proteção dos dados e da propriedade intelectual é uma prioridade para nós. Garantimos que todas as soluções sejam desenvolvidas com as melhores práticas de segurança, mantendo a integridade das informações e respeitando os direitos de propriedade intelectual dos nossos clientes.</span>
                 </Cards>
                 <Cards>
                     <SuccessImg src={success} alt="Imagem de sucesso"></SuccessImg>
-                    <span><h2>Code Reviews</h2>Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Revisões de Código</h2>As revisões de código são uma parte fundamental do nosso processo. Elas garantem que todos os aspectos técnicos do projeto sejam cuidadosamente analisados e validados, promovendo a qualidade do produto final e a eficiência do código.</span>
                 </Cards>
                 <Cards>
                     <PadlockinImg src={padlock} alt="Imagem de cadeado"></PadlockinImg>
-                    <span><h2>Quality Assurance & Testing</h2>Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.</span>
+                    <span><h2>Garantia de Qualidade e Testes</h2>Acreditamos que a qualidade deve ser assegurada em cada etapa do desenvolvimento. Nosso time realiza testes rigorosos para identificar e corrigir problemas antes do lançamento, garantindo que o software entregue seja estável, seguro e funcional.</span>
                 </Cards>
-
             </DivCards>
-
 
         </Page>
     )

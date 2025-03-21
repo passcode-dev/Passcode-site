@@ -179,31 +179,19 @@ export default function ExceptionalSoftwares  () {
                 </TitleBox>
             </Title>
 
-
-
             <Conteiner>
-
                 <Conteiner1>
-
                     <ConteinerText>
-
-                        <h3>Build the right team to scale</h3>
-                        <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers</p>
-                        <P1>Our <Span>delivery model</Span> helps you cut costs and deliver within budget.</P1>
-                        
+                        <h3>Montando a Equipe Ideal para o Crescimento</h3>
+                        <p>
+                            Encontrar os profissionais certos para o seu projeto é essencial. Ajudamos você a selecionar talentos que não só atendem às suas necessidades, mas também se adaptam aos seus processos e permanecem com você ao longo de todo o ciclo de vida do projeto — diferentemente de freelancers temporários.
+                            <br/>
+                            Nosso modelo de entrega é pensado para otimizar custos e garantir que o projeto seja entregue dentro do orçamento, sem comprometer a qualidade.
+                        </p>
                         <Citation>
                             <Dividervertical />
-                            <p>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
+                            <p>"A Passcode identificou rapidamente problemas maiores no software, o que nos levou a expandir o escopo do projeto para desenvolver novos módulos."</p>
                         </Citation>
-
-                        <CEO>
-                            <ImgCeo src={ceo1}></ImgCeo>
-                            <CeoTxt>
-                                <P2>Jeewa markram</P2>
-                                <P3>CEO</P3>
-                            </CeoTxt>
-                        </CEO>
-
                     </ConteinerText>
 
                     <ConteinerImg>
@@ -211,67 +199,43 @@ export default function ExceptionalSoftwares  () {
                         <BolaAmarelaDiagSup/>
                         <BolaRosaEmbaixo/>
                     </ConteinerImg>
-                    
                 </Conteiner1>
 
-
-
-
                 <Conteiner1> 
-
                     <ConteinerImg>
                         <IMG src={equipepc}></IMG>
                         <BolaAmarelaEmbaixo/>
                         <BolaRosaDiagSup/>
-                     </ConteinerImg>
+                    </ConteinerImg>
 
                     <ConteinerText>
-
-                        <h3>Build the right team to scale</h3>
-                        <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers</p>
-                        <P1>Our <Span>delivery model</Span> helps you cut costs and deliver within budget.</P1>
-                        
+                        <h3>A Equipe Certa para Impulsionar Seu Projeto</h3>
+                        <p>
+                            Reunir uma equipe talentosa e alinhada com as suas necessidades é fundamental para o sucesso do projeto. Nós auxiliamos você na seleção dos profissionais que entendem seus processos e estão prontos para contribuir a longo prazo, sem as incertezas associadas aos freelancers.
+                            <br/>
+                            Nossa metodologia de entrega permite que você corte custos enquanto garante a entrega dentro do prazo e orçamento.
+                        </p>
                         <Citation>
                             <Dividervertical />
-                            <p>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
+                            <p>"A Passcode foi eficaz em identificar questões cruciais no nosso software, o que nos levou a revisar o escopo e criar novos módulos."</p>
                         </Citation>
-
-                        <CEO>
-                            <ImgCeo src={ceo2}></ImgCeo>
-
-                            <CeoTxt>
-                                <P2>Jeewa markram</P2>
-                                <P3>CEO</P3>
-                            </CeoTxt>
-                        </CEO>
-
                     </ConteinerText>
-
                 </Conteiner1>
-
-
-
 
                 <Conteiner1>
 
                     <ConteinerText>
-                        <h3>Build the right team to scale</h3>
-                        <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers</p>
-                        <P1>Our <Span>delivery model</Span> helps you cut costs and deliver within budget.</P1>
-                        
+                        <h3>Estruturando a Equipe para Escalar com Sucesso</h3>
+                        <p>
+                            Encontrar e manter os talentos certos para o seu projeto pode ser desafiador. Trabalhamos com você para recrutar profissionais que se ajustam perfeitamente às suas necessidades, compreendem seus processos e têm compromisso com o sucesso do projeto a longo prazo — o que não acontece com freelancers.
+                            <br/>
+                            Nosso modelo de entrega focado em resultados ajuda a reduzir custos e garantir que seu projeto seja entregue de forma eficiente, dentro do orçamento planejado.
+                        </p>
+
                         <Citation>
                             <Dividervertical />
-                            <p>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
+                            <p>"A Passcode rapidamente identificou problemas maiores em nosso software, o que nos levou a ampliar a visão do projeto e incluir novos módulos."</p>
                         </Citation>
-
-                        <CEO>
-                            <ImgCeo src={DemiMoore}></ImgCeo>
-                            <CeoTxt>
-                                <P2>Jeewa markram</P2>
-                                <P3>CEO</P3>
-                            </CeoTxt>
-                        </CEO>
-
                     </ConteinerText>
 
                     <ConteinerImg>
@@ -279,9 +243,7 @@ export default function ExceptionalSoftwares  () {
                         <BolaAmarelaDiagInf/>
                         <BolaRosaEmcima/>
                     </ConteinerImg>
-
                 </Conteiner1>
-
 
             </Conteiner>
 

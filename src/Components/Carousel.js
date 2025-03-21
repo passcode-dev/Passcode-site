@@ -132,10 +132,10 @@ export const Carousel = () => {
         <Card>
           <CardInfo>
             <CardImgTitle>
-              <Bola><IMG src={mobile} alt="Imagem de celular"></IMG></Bola>
+              <Bola><IMG src={webdesign} alt="Imagem de celular"></IMG></Bola>
             </CardImgTitle>
-            <h2><Span>Mobile App Development</Span></h2>
-            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+            <h2><Span>Desenvolvimento de Aplicativos Móveis</Span></h2>
+            <p>Transformamos ideias em aplicativos móveis intuitivos e funcionais, ajudando seu negócio a alcançar usuários em qualquer lugar. O aplicativo certo pode expandir seu alcance e melhorar a experiência do usuário.</p>
           </CardInfo>
         </Card>
       </SwiperSlide>
@@ -149,8 +149,8 @@ export const Carousel = () => {
               </Bola>
 
             </CardImgTitle>
-            <h2><Span>Web Design & Development</Span></h2>
-            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+            <h2><Span>Design e Desenvolvimento de Sites</Span></h2>
+            <p>Criação de sites visualmente impressionantes e funcionais. Com um design responsivo e uma navegação intuitiva, garantimos que seu site seja uma ferramenta eficaz para atrair e engajar visitantes.</p>
           </CardInfo>
         </Card>
       </SwiperSlide>
@@ -160,15 +160,51 @@ export const Carousel = () => {
           <CardInfo>
             <CardImgTitle>
               <Bola>
-                <IMG src={dashboard} alt="Imagem de dashboard"></IMG>
+                <IMG src={webdesign} alt="Imagem de dashboard"></IMG>
               </Bola>
             </CardImgTitle>
-            <h2><Span>Software Testing Service</Span></h2>
-            <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-          </CardInfo>
+            <h2><Span>Serviços de Testes de Software</Span></h2>
+            <p>Garantimos que seu software esteja livre de erros e pronto para o mercado. Nossos testes rigorosos asseguram a qualidade do seu produto, desde a funcionalidade até a performance e a segurança.</p>
+            </CardInfo>
         </Card>
       </SwiperSlide>
-
+      <SwiperSlide>
+        
+      <Card>
+        <CardInfo>
+          <CardImgTitle>
+            <Bola><IMG src={webdesign} alt="Imagem de inteligência artificial"></IMG></Bola>
+          </CardImgTitle>
+          <h2><Span>Inteligência Artificial (IA)</Span></h2>
+          <p>Implementamos soluções de IA para otimizar processos, melhorar a tomada de decisões e criar experiências personalizadas para os usuários. De chatbots a automação, podemos transformar o seu negócio com inteligência artificial.</p>
+        </CardInfo>
+      </Card>
+    </SwiperSlide>
+    
+    <SwiperSlide>
+        <Card>
+        <CardInfo>
+          <CardImgTitle>
+            <Bola><IMG src={webdesign} alt="Imagem de desenvolvimento back-end"></IMG></Bola>
+          </CardImgTitle>
+          <h2><Span>Desenvolvimento Back-End</Span></h2>
+          <p>Criamos sistemas robustos e escaláveis no back-end, garantindo o bom funcionamento da infraestrutura, segurança e a integração com diferentes plataformas, proporcionando a base necessária para o sucesso do seu software.</p>
+        </CardInfo>
+      </Card>
+    </SwiperSlide>
+    
+    <SwiperSlide>
+      <Card>
+        <CardInfo>
+          <CardImgTitle>
+            <Bola><IMG src={webdesign} alt="Imagem de serviços em nuvem"></IMG></Bola>
+          </CardImgTitle>
+          <h2><Span>Serviços em Nuvem</Span></h2>
+          <p>Oferecemos soluções completas em nuvem para escalar e otimizar sua infraestrutura, garantindo flexibilidade, segurança e acessibilidade. A nuvem transforma a maneira como sua empresa opera e cresce no mercado digital.</p>
+        </CardInfo>
+      </Card>
+    </SwiperSlide>
+  
     </SwiperStyled>
   );
 };

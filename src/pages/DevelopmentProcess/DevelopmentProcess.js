@@ -180,19 +180,19 @@ export default function DevelopmentProcess() {
             <DivCards>
 
                 <Cards >
-                    <h2><span>#1 </span> Assemble the rigth team</h2>
-                    <p>We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.</p>
+                    <h2><span>#1 </span>Montar a Equipe Certa</h2>
+                    <p>Cuidamos de toda a seleção e contratação da equipe ideal, sem que você precise se preocupar com isso.</p>
                 </Cards>
                 <Marker />
                 <Cards >
-                    <h2><span>#2 </span>Tech architecture</h2>
-                    <p>We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently</p>
+                    <h2><span>#2 </span>Arquitetura Tecnológica</h2>
+                    <p>Transformamos apps monolíticos em microserviços, permitindo mais agilidade e escalabilidade.</p>
 
                 </Cards>
                 <Marker />
                 <Cards >
-                    <h2><span>#3 </span>Code reviews</h2>
-                    <p>Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells</p>
+                    <h2><span>#3 </span>Revisões de Código</h2>
+                    <p>Realizamos revisões de código para identificar e corrigir falhas, garantindo qualidade e desempenho.</p>
                 </Cards>
 
             </DivCards>
@@ -216,19 +216,19 @@ export default function DevelopmentProcess() {
             <DivCards2>
                 <Marker />
                 <Cards >
-                    <h2><span>#4 </span> Assemble the rigth team</h2>
-                    <p>We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.</p>
+                    <h2><span>#4 </span>Desenvolvimento Iterativo</h2>
+                    <p>Nosso processo é baseado em iterações, permitindo ajustes contínuos e melhorias durante o desenvolvimento.</p>
                 </Cards>
                 <Marker />
                 <Cards >
-                    <h2><span>#5 </span>Tech architecture</h2>
-                    <p>We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently</p>
+                    <h2><span>#5 </span>Testes e Validação</h2>
+                    <p>Realizamos testes rigorosos durante todo o processo para garantir que o software esteja sempre pronto para ser entregue com qualidade.</p>
 
                 </Cards>
                 <Marker />
                 <Cards >
-                    <h2><span>#6 </span>Code reviews</h2>
-                    <p>Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells</p>
+                    <h2><span>#6 </span>Segurança e Performance</h2>
+                    <p>Garantimos que todos os aspectos de segurança e performance sejam atendidos antes do lançamento, assegurando a confiabilidade do sistema.</p>
                 </Cards>
                 <Marker />
                 <StyleImg2 src={Tropy} alt="Imagem de troféu" />
