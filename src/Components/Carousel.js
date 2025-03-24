@@ -4,16 +4,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+import { Autoplay } from 'swiper/modules';
 
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import webdesign from "../images/webdesign.webp"
-import mobile from "../images/mobile.webp"
-import dashboard from "../images/DashBoard.webp"
-
-
 
 const Card = styled(SwiperSlide)`
   display:flex!important;
@@ -25,6 +23,11 @@ const Card = styled(SwiperSlide)`
   justify-content: center;
   align-items:center;
   transition: transform 0.3s ease-in-out;
+
+  cursor: grab;
+  &:active{
+    cursor: grabbing;
+  }
 
   &:hover {
     transform: scale(1.01);
@@ -47,9 +50,9 @@ const CardInfo = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
-  align-items:center;
+  align-items:start;
   width: 333px;
-  height: 287px;
+  height: 300px;
 
   transition: transform 0.3s ease-in-out;
   &:hover {
@@ -62,13 +65,13 @@ const CardInfo = styled.div`
     font-size: 14px; 
     color: #666;
     line-height:20px;
-    
   }
     
   h2 {
     font-size: 20px; 
     font-weight: 600px;
     color: #333;
+    margin-bottom: 20px;
   }
 `;
 
@@ -114,14 +117,15 @@ export const Carousel = () => {
 
   return (
     <SwiperStyled
+      modules={[Autoplay]}
       spaceBetween={50}
       slidesPerView={3}
       loop={true}
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+
       breakpoints={{
-        1330: { slidesPerView: 3 }, // Para telas maiores (desktop)
+        1330: { slidesPerView: 3 }, // Para telas maiores
         900: { slidesPerView: 2 },  // Para tablets
         300: { slidesPerView: 1 },  // Para celulares
       }}

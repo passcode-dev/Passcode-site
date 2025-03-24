@@ -15,7 +15,7 @@ const Page = styled.div`
         width: 80%;
     }
 
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         margin-bottom: 100px;
     }
 `
@@ -25,7 +25,7 @@ const Title=styled.div`
     font-size: 35px;
     align-items: center;
     font-family: 'Inter';
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
 
     p, span {
@@ -51,7 +51,7 @@ const DivCards = styled.div`
     flex-direction: row;
     justify-content: space-around;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
         grid-template-columns: 1fr;
         margin-right: 0px;
         justify-content: center;
@@ -66,7 +66,7 @@ const DivCards2 = styled.div`
     flex-direction: row;
     justify-content: space-around;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
         align-items: center;
         justify-content: center;
         grid-template-columns: 1fr;
@@ -75,7 +75,7 @@ const DivCards2 = styled.div`
 `
 
 const TimelineContainer = styled.div`
-  width: 75%;
+  width: 55%;
   height: 2px;
   background: red;
   display: flex;
@@ -83,7 +83,11 @@ const TimelineContainer = styled.div`
   justify-content: space-around;
   margin: 20px;
 
-  @media (max-width:800px) {
+  @media (max-width:2000px) {
+    width: 75%;
+  }
+
+  @media (max-width:1200px) {
     display: none;
   }
 `;
@@ -95,7 +99,7 @@ const MarkerTop = styled.div`
     margin-bottom: 15px;
     margin-left: 200px;
 
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         margin-bottom: 0px;
         margin-left: 0px;
     }
@@ -103,7 +107,7 @@ const MarkerTop = styled.div`
 
 const Marker = styled.div`
     display: none;
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         display: flex;
         width: 2px;
         height: 15px;
@@ -121,14 +125,14 @@ const MarkerBottom = styled.div`
 `;
 
 const StyleImg=styled.img`
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         display: none;
   }
 `
 
 const StyleImg2=styled.img`
     display: none;
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         display: flex;
         margin-left: 45%;
   }`
@@ -145,7 +149,7 @@ const Cards = styled.div`
     margin: 30px;
 
     // MOBILE 
-    @media (max-width:800px) {
+    @media (max-width:1200px) {
         margin: 10px;
     }
     
@@ -197,7 +201,7 @@ export default function DevelopmentProcess() {
 
             </DivCards>
             <Div>
-                <TimelineContainer>
+            <TimelineContainer>
 
                 <MarkerTop />
                 <MarkerBottom />

@@ -2,10 +2,11 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import PassCode from "../../images/Logo.webp";
 import PassCodeWhite from "../../images/logo_white.webp";
-import { Button } from "../../Components/Buton"
-import { Link, navigate } from 'gatsby'
-import menu from '../../images/hamburguer.png'
-import { X, Upload } from 'lucide-react'
+import { Button } from "../../Components/Buton";
+import { Link } from 'gatsby';
+import menu from '../../images/hamburguer.png';
+import { X } from 'lucide-react';
+
 const Cabecalho = styled.nav`
     display: flex;
     justify-content: space-between;
@@ -18,19 +19,22 @@ const Cabecalho = styled.nav`
         flex-direction:column ;
         height: 100px;
     }
-`
+`;
+
 const ButtonPrinc = styled(Button)`
     @media (max-width:800px) {
         display: flex;
         justify-content: center;
         width: 100%;
     }
- `
+`;
+
 const StyledLink = styled(Link)`
     color: #4A5568;
     text-decoration: none;
     font-size: 18px;
-`
+`;
+
 const Logo = styled.img`
     width: 105px;
     height: 24px;
@@ -40,7 +44,8 @@ const Logo = styled.img`
     @media (max-width: 800px){
         margin-left: 0px;
     }
- `
+`;
+
 const Logo2 = styled.img`
     width: auto;
     gap: 8px;
@@ -50,33 +55,36 @@ const Logo2 = styled.img`
     @media (max-width: 800px){
         margin-left: 0px;
     }
- `
+`;
+
 const Menu = styled.img`
     display: none;
     cursor: pointer;
-
 
     @media (max-width: 800px) {
         display: flex;
         width: 24px;
     }
- `
+`;
+
 const DivLinks = styled.div`
     width: 70%;
     display: flex;
     justify-content: space-around;
 
-      @media (max-width: 800px) {
+    @media (max-width: 800px) {
         display: none;
     }
- `
+`;
+
 const DivMob = styled.div`
     @media (max-width:800px) {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
-`
+`;
+
 const slideIn = keyframes`
     from {
         transform: translateX(100%);
@@ -87,6 +95,7 @@ const slideIn = keyframes`
         opacity: 1;
     }
 `;
+
 const Overlay = styled.div`
     z-index: 9999;
     position: fixed;
@@ -100,6 +109,7 @@ const Overlay = styled.div`
     justify-content: flex-end;
     align-items: center;
 `;
+
 const Modal = styled.div`
     position: absolute;
     top: 0;
@@ -115,6 +125,7 @@ const Modal = styled.div`
     opacity: 0;
     animation: ${slideIn} 0.4s ease-out forwards; 
 `;
+
 const JoinUs = styled.div`
     display: flex;
     padding: 15px 10px 0 0;
@@ -128,6 +139,7 @@ const JoinUs = styled.div`
         line-height: 20px;
     }
 `;
+
 const Conteinerinput = styled.div`
     display: flex;
     padding: 0;
@@ -145,6 +157,7 @@ const Conteinerinput = styled.div`
         margin: 0;
     }
 `;
+
 const PlaceText = styled.div`
     display: flex;
     flex-direction: column;
@@ -152,26 +165,28 @@ const PlaceText = styled.div`
     gap: 5px;
     text-align: start;
 `;
+
 const Head = styled.div`
     display: flex;
     justify-content: flex-end;
     width: 100%;
 `;
+
 const StyledLink2 = styled(Link)`
     color:rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
-`
+`;
+
 const Sair = styled(X)`
     color: white;
     text-align: center;
     cursor: pointer;
 `;
+
 export default function Header() {
     const [open, setOpen] = React.useState(false);
-    // const navigateContact = () => {
-    //     navigate("/ContactUs/ContactUs");
-    // }
+
     return (
         <>
             <Cabecalho>
@@ -184,31 +199,31 @@ export default function Header() {
                             <JoinUs>
                                 <Conteinerinput>
                                     <Logo2 src={PassCodeWhite} alt="Logo" />
-
                                     <PlaceText>
-                                        <StyledLink2 href="/">Inicio</StyledLink2>
+                                        <StyledLink2 to="/">Inicio</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 href="/AboutUs/AboutUs/">Quem somos</StyledLink2>
+                                        <StyledLink2 to="/AboutUs/AboutUs/">Quem somos</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 href="/WorkWithUs/WorkWithUs/">Trabelhe Conosco</StyledLink2>
+                                        <StyledLink2 to="/WorkWithUs/WorkWithUs/">Trabalhe Conosco</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 href="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">Fale Conosco</StyledLink2>
+                                        <StyledLink2 to="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">Fale Conosco</StyledLink2>
                                     </PlaceText>
-
                                 </Conteinerinput>
                             </JoinUs>
                         </Modal>
                     </Overlay>
-                )
-                }
+                )}
                 <DivMob>
-                    <Logo src={PassCode} alt="Logo" />
+                 
+                    <Link to="/">
+                        <Logo src={PassCode} alt="Logo" />
+                    </Link>
                     <Menu onClick={() => setOpen(true)} src={menu} />
                 </DivMob>
                 <DivLinks>
@@ -216,8 +231,8 @@ export default function Header() {
                     <StyledLink to="/AboutUs/AboutUs">Quem somos</StyledLink>
                     <StyledLink to="/WorkWithUs/WorkWithUs">Trabalhe Conosco</StyledLink>
                 </DivLinks>
-                <ButtonPrinc onClick={() => window.open("https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>
-                Fale Conosco
+                <ButtonPrinc onClick={() => window.open("https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>
+                    Fale Conosco
                 </ButtonPrinc>
             </Cabecalho>
         </>

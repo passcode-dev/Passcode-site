@@ -37,7 +37,7 @@ const Title = styled.div`
     }
 
     @media (max-width: 800px) {
-        align-items: center;  
+        align-items: center;
     }
 `;
 
@@ -54,8 +54,9 @@ const DivCards = styled.div`
     gap: 10px; 
     margin-bottom: 100px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
         grid-template-columns: 1fr;
+        margin-bottom: 50px;
     }
 `;
 
@@ -78,6 +79,12 @@ const Cards = styled.div`
     h2{
         color: #1A202C;
         font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width:500px) {
+        height: auto;
+        flex-direction: column;
     }
 `
 
@@ -89,6 +96,10 @@ const RocketImg = styled.img`
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
+
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
 `
 const CodeImg = styled.img`
 
@@ -98,6 +109,10 @@ const CodeImg = styled.img`
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
+
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
 
 `
 const HeartImg = styled.img`
@@ -109,6 +124,10 @@ const HeartImg = styled.img`
     padding: 10px;
     margin-bottom: 40px;
 
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
+
 `
 const ShieldImg = styled.img`
 
@@ -118,6 +137,10 @@ const ShieldImg = styled.img`
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
+
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
 
 `
 const SuccessImg = styled.img`
@@ -129,6 +152,10 @@ const SuccessImg = styled.img`
     padding: 10px;
     margin-bottom: 40px;
 
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
+
 `
 const PadlockinImg = styled.img`
 
@@ -138,6 +165,10 @@ const PadlockinImg = styled.img`
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
+
+    @media (max-width:500px) {
+        margin-bottom: 0px;
+    }
 
 `
 

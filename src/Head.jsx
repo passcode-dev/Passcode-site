@@ -6,7 +6,7 @@ export function Head() {
             <html lang="pt-br" />
 
             <title>Passcode | Oficial</title>
-            <meta name="description" content="Descrição da minha página para SEO" />
+            <meta name="description" content="Passcode" />
         </>
     )
 }
