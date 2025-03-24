@@ -14,6 +14,7 @@ export const Title = styled.div`
     align-items: center;
     flex-direction: column;
     padding-bottom: 30px;
+    margin-top: 50px;
 `
 export const TitleBox = styled.div`
     max-width:475px;

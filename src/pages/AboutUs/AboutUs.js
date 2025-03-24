@@ -4,6 +4,8 @@ import Header from "../Header/Header";
 import Footer from "../footer/footer";
 import Aboutus from "../../images/Aboutus.webp"
 import pauta from "../../images/pauta.webp"
+import { BolaRosaEmbaixo,BolaAmarelaDiagSup,BolaRosaDiagSup,BolaAmarelaEmbaixo,BolaRosaEmcima,BolaAmarelaDiagInf } from "../../Components/Balls"
+
 
 const Body = styled.div`
     margin: 0;
@@ -15,6 +17,7 @@ const Conteiner = styled.div`
     max-height: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    
     @media (min-width: 1200px){
         h1{
             background: black;
@@ -33,10 +36,10 @@ const Conteiner = styled.div`
 const ConteinerImg = styled.div`
     position:relative;
     display: flex;
-    max-width: 575px;
+    max-width: 650px;
     max-height: 473px;
 
-    @media (max-width:1200px) {
+    @media (max-width:1460px) {
         order: 1;
         margin-bottom: 50px;
     }
@@ -45,15 +48,15 @@ const ConteinerImg = styled.div`
 export const IMG = styled.img`
     border-radius: 10px;
     z-index: 0;
-    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
 `
 
 const ContainerTitle = styled.div`
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     h1{
         font-family: "Inter";
@@ -65,7 +68,7 @@ const ContainerTitle = styled.div`
     }
 
 
-    @media (max-width:1200px) {
+    @media (max-width:1460px) {
         margin-bottom: 30px;
 
         h1{
@@ -86,14 +89,15 @@ const Conteiner1 = styled.div`
     justify-content:space-evenly;
     padding: 20px 40px 20px 40px;
     margin-bottom: 50px;
-    @media (max-width:1200px) {
+    @media (max-width:1460px) {
         flex-direction: column;
         align-items: center;
     }
 `
+
 const ConteinerText = styled.div`
-    max-width: 550px;
-    @media (max-width:1200px) {
+    max-width: 650px;
+    @media (max-width:1460px) {
         padding-top: 15px;
         h3{
             padding-bottom:10px;
@@ -108,13 +112,14 @@ const ConteinerText = styled.div`
         line-height: 38.09px;
         letter-spacing: 0;
         text-align: left;
+        padding-bottom: 20px;
     }
 
     p{
         font-family: "Inter";
-        font-weight: 400;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 30px;
+        font-weight: 400 !important;
         letter-spacing: 0%;
         text-align: left;
     }
@@ -151,16 +156,21 @@ export default function AboutUs() {
                     </ConteinerText>
                     <ConteinerImg>
                         <IMG src={Aboutus}></IMG>
+                        <BolaAmarelaDiagSup/>
+                        <BolaRosaEmbaixo/>
                     </ConteinerImg>
                 </Conteiner1>
 
                 <Conteiner1>
                     <ConteinerImg>
                         <IMG src={pauta}></IMG>
+                        <BolaAmarelaEmbaixo/>
+                        <BolaRosaDiagSup/>
                     </ConteinerImg>
                     <ConteinerText>
                         <h3>Nossa Visão e Valores</h3>
                         <p>Ao longo dos anos, a Passcode se consolidou como uma referência em desenvolvimento de software. Nossa visão é ser reconhecida como uma empresa líder em soluções digitais, focada em melhorar a eficiência, segurança e escalabilidade das operações de nossos clientes. Acreditamos que a verdadeira inovação só é alcançada quando existe uma profunda colaboração entre nossa equipe e nossos parceiros. Nossos valores estão enraizados no compromisso com a transparência, ética e qualidade, trabalhando sempre para entregar resultados que superem as expectativas e gerem impactos positivos no mercado. Em tudo o que fazemos, buscamos sempre a excelência e a evolução constante, com uma forte ênfase em criar soluções que sejam sustentáveis e adaptáveis ao futuro.</p>
+                        
                     </ConteinerText>
                 </Conteiner1>
             </Conteiner>

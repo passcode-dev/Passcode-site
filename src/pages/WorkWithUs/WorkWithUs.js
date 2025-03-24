@@ -29,8 +29,10 @@ const Conteiner = styled.div`
     flex-direction: column;
     max-width: 100%;
     margin-bottom: 200px;
+    margin-top: 100px;
+
     @media (max-width:900px) {
-        margin-top:50px;
+        margin-top: 10px;
         margin-bottom: 100px;
     }
     
@@ -60,6 +62,7 @@ const ConteinerText = styled.div`
 
     @media (max-width:900px) {
 
+        margin: 30px;
         h1{
             text-align: center;
         }

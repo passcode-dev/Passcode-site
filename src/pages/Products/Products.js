@@ -157,7 +157,7 @@ export default function Products() {
                 loading="lazy" // Ajuste para carregamento lazy
               />
             </ConteinerImage2>
-              <StyledButton>Vamos Começar</StyledButton>
+              <StyledButton onClick={() => window.open("https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>Vamos Começar</StyledButton>
             </ConteinerText>
             <ConteinerImage>
               <GatsbyImage
