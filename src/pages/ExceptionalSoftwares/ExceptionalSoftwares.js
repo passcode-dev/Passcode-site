@@ -196,7 +196,7 @@ export default function ExceptionalSoftwares  () {
                     </ConteinerText>
 
                     <ConteinerImg>
-                        <IMG src={timeBoard}></IMG>
+                        <IMG src={timeBoard} alt="Imagem exemplo reunião"></IMG>
                         <BolaAmarelaDiagSup/>
                         <BolaRosaEmbaixo/>
                     </ConteinerImg>
@@ -204,7 +204,7 @@ export default function ExceptionalSoftwares  () {
 
                 <Conteiner1> 
                     <ConteinerImg>
-                        <IMG src={equipepc}></IMG>
+                        <IMG src={equipepc} alt="Imagem exemplo trabalho"></IMG>
                         <BolaAmarelaEmbaixo/>
                         <BolaRosaDiagSup/>
                     </ConteinerImg>
@@ -240,7 +240,7 @@ export default function ExceptionalSoftwares  () {
                     </ConteinerText>
 
                     <ConteinerImg>
-                        <IMG src={reuniao}></IMG>
+                        <IMG src={reuniao} alt="Imagem exemplo palestra"></IMG>
                         <BolaAmarelaDiagInf/>
                         <BolaRosaEmcima/>
                     </ConteinerImg>

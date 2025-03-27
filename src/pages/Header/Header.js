@@ -204,11 +204,11 @@ export default function Header() {
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 to="/AboutUs/AboutUs/">Quem somos</StyledLink2>
+                                        <StyledLink2 to="/AboutUs/page/">Quem somos</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 to="/WorkWithUs/WorkWithUs/">Trabalhe Conosco</StyledLink2>
+                                        <StyledLink2 to="/WorkWithUs/page/">Trabalhe Conosco</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
@@ -224,12 +224,12 @@ export default function Header() {
                     <Link to="/">
                         <Logo src={PassCode} alt="Logo" />
                     </Link>
-                    <Menu onClick={() => setOpen(true)} src={menu} />
+                    <Menu onClick={() => setOpen(true)} src={menu} alt="Botão menu"/>
                 </DivMob>
                 <DivLinks>
                     <StyledLink to="/">Inicio</StyledLink>
-                    <StyledLink to="/AboutUs/AboutUs">Quem somos</StyledLink>
-                    <StyledLink to="/WorkWithUs/WorkWithUs">Trabalhe Conosco</StyledLink>
+                    <StyledLink to="/AboutUs/page">Quem somos</StyledLink>
+                    <StyledLink to="/WorkWithUs/page">Trabalhe Conosco</StyledLink>
                 </DivLinks>
                 <ButtonPrinc onClick={() => window.open("https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>
                     Fale Conosco
