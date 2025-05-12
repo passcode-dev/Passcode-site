@@ -1,4 +1,5 @@
 import * as React from 'react'
+import passcodeLogo from "./images/passcode.webp";
 
 export function Head() {
     return (
@@ -6,6 +7,7 @@ export function Head() {
             <html lang="pt-br" />
 
             <title>Passcode - Desenvolvimento de Software</title>
+            <link rel="icon" href={passcodeLogo} />
             <meta name="description" content="Passcode é uma software house especializada em desenvolvimento de aplicativos móveis, design de sites, testes de software e soluções em inteligência artificial." />
             <meta name="keywords" content="software house, desenvolvimento de aplicativos móveis, design de sites, testes de software, inteligência artificial, back-end, soluções em nuvem, qualidade de software" />
             <meta name="author" content="Passcode" />
