@@ -1,13 +1,13 @@
 import * as React from "react"
 import styled from "styled-components"
-import { Divider,Dividervertical } from "../../Components/Divider"
+import { Divider, Dividervertical } from "../../Components/Divider"
 import timeBoard from "../../images/timeBoard.webp"
 import ceo1 from "../../images/ceo1.webp"
 import ceo2 from "../../images/ceo2.webp"
 import equipepc from "../../images/equipepc.webp"
 import DemiMoore from "../../images/DemiMoore.webp"
 import reuniao from "../../images/reuniao.webp"
-import { BolaRosaEmbaixo,BolaAmarelaDiagSup,BolaRosaDiagSup,BolaAmarelaEmbaixo,BolaRosaEmcima,BolaAmarelaDiagInf } from "../../Components/Balls"
+import { BolaRosaEmbaixo, BolaAmarelaDiagSup, BolaRosaDiagSup, BolaAmarelaEmbaixo, BolaRosaEmcima, BolaAmarelaDiagInf } from "../../Components/Balls"
 
 export const Title = styled.div`
     display: flex;
@@ -149,7 +149,7 @@ export const ImgCeo = styled.img`
     height: 41px;
     border-radius: 50px;
 `
-export const ConteinerImg=styled.div`
+export const ConteinerImg = styled.div`
     position:relative;
     display: flex;
     max-width: 575px;
@@ -169,7 +169,7 @@ export const IMG = styled.img`
 `
 
 
-export default function ExceptionalSoftwares  () {
+export default function ExceptionalSoftwares() {
     return (
         <>
 
@@ -186,39 +186,39 @@ export default function ExceptionalSoftwares  () {
                         <h3>Montando a Equipe Ideal para o Crescimento</h3>
                         <p>
                             Encontrar os profissionais certos para o seu projeto é essencial. Ajudamos você a selecionar talentos que não só atendem às suas necessidades, mas também se adaptam aos seus processos e permanecem com você ao longo de todo o ciclo de vida do projeto — diferentemente de freelancers temporários.
-                            <br/>
+                            <br />
                             Nosso modelo de entrega é pensado para otimizar custos e garantir que o projeto seja entregue dentro do orçamento, sem comprometer a qualidade.
                         </p>
                         <Citation>
                             <Dividervertical />
-                            <p>"A Passcode identificou rapidamente problemas maiores no software, o que nos levou a expandir o escopo do projeto para desenvolver novos módulos."</p>
+                            <p>“A atuação da Passcode foi decisiva: identificaram pontos críticos no software e nos ajudaram a reestruturar o projeto, incluindo novos módulos que elevaram o valor da entrega final."</p>
                         </Citation>
                     </ConteinerText>
 
                     <ConteinerImg>
                         <IMG src={timeBoard} alt="Imagem exemplo reunião"></IMG>
-                        <BolaAmarelaDiagSup/>
-                        <BolaRosaEmbaixo/>
+                        <BolaAmarelaDiagSup />
+                        <BolaRosaEmbaixo />
                     </ConteinerImg>
                 </Conteiner1>
 
-                <Conteiner1> 
+                <Conteiner1>
                     <ConteinerImg>
                         <IMG src={equipepc} alt="Imagem exemplo trabalho"></IMG>
-                        <BolaAmarelaEmbaixo/>
-                        <BolaRosaDiagSup/>
+                        <BolaAmarelaEmbaixo />
+                        <BolaRosaDiagSup />
                     </ConteinerImg>
 
                     <ConteinerText>
                         <h3>A Equipe Certa para Impulsionar Seu Projeto</h3>
                         <p>
                             Reunir uma equipe talentosa e alinhada com as suas necessidades é fundamental para o sucesso do projeto. Nós auxiliamos você na seleção dos profissionais que entendem seus processos e estão prontos para contribuir a longo prazo, sem as incertezas associadas aos freelancers.
-                            <br/>
+                            <br />
                             Nossa metodologia de entrega permite que você corte custos enquanto garante a entrega dentro do prazo e orçamento.
                         </p>
                         <Citation>
                             <Dividervertical />
-                            <p>"A Passcode foi eficaz em identificar questões cruciais no nosso software, o que nos levou a revisar o escopo e criar novos módulos."</p>
+                            <p>“Com rapidez e precisão, a Passcode detectou falhas estruturais que estavam passando despercebidas. Isso nos fez repensar o projeto e adicionar funcionalidades essenciais."</p>
                         </Citation>
                     </ConteinerText>
                 </Conteiner1>
@@ -229,20 +229,20 @@ export default function ExceptionalSoftwares  () {
                         <h3>Estruturando a Equipe para Escalar com Sucesso</h3>
                         <p>
                             Encontrar e manter os talentos certos para o seu projeto pode ser desafiador. Trabalhamos com você para recrutar profissionais que se ajustam perfeitamente às suas necessidades, compreendem seus processos e têm compromisso com o sucesso do projeto a longo prazo — o que não acontece com freelancers.
-                            <br/>
+                            <br />
                             Nosso modelo de entrega focado em resultados ajuda a reduzir custos e garantir que seu projeto seja entregue de forma eficiente, dentro do orçamento planejado.
                         </p>
 
                         <Citation>
                             <Dividervertical />
-                            <p>"A Passcode rapidamente identificou problemas maiores em nosso software, o que nos levou a ampliar a visão do projeto e incluir novos módulos."</p>
+                            <p>"Graças à análise minuciosa da Passcode, identificamos problemas críticos que mudaram completamente nossa abordagem — o projeto ganhou novo fôlego com os módulos adicionais que criamos"</p>
                         </Citation>
                     </ConteinerText>
 
                     <ConteinerImg>
                         <IMG src={reuniao} alt="Imagem exemplo palestra"></IMG>
-                        <BolaAmarelaDiagInf/>
-                        <BolaRosaEmcima/>
+                        <BolaAmarelaDiagInf />
+                        <BolaRosaEmcima />
                     </ConteinerImg>
                 </Conteiner1>
 

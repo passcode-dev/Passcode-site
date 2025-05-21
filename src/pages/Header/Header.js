@@ -200,19 +200,19 @@ export default function Header() {
                                 <Conteinerinput>
                                     <Logo2 src={PassCodeWhite} alt="Logo" />
                                     <PlaceText>
-                                        <StyledLink2 to="/">Inicio</StyledLink2>
+                                        <StyledLink2 to="/">Início</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 to="/AboutUs/page/">Quem somos</StyledLink2>
+                                        <StyledLink2 to="/AboutUs">Quem somos</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 to="/WorkWithUs/page/">Trabalhe Conosco</StyledLink2>
+                                        <StyledLink2 to="/WorkWithUs">Trabalhe Conosco</StyledLink2>
                                     </PlaceText>
 
                                     <PlaceText>
-                                        <StyledLink2 to="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">Fale Conosco</StyledLink2>
+                                        <StyledLink2 to="https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista">Fale Conosco</StyledLink2>
                                     </PlaceText>
                                 </Conteinerinput>
                             </JoinUs>
@@ -227,9 +227,9 @@ export default function Header() {
                     <Menu onClick={() => setOpen(true)} src={menu} alt="Botão menu"/>
                 </DivMob>
                 <DivLinks>
-                    <StyledLink to="/">Inicio</StyledLink>
-                    <StyledLink to="/AboutUs/page">Quem somos</StyledLink>
-                    <StyledLink to="/WorkWithUs/page">Trabalhe Conosco</StyledLink>
+                    <StyledLink to="/">Início</StyledLink>
+                    <StyledLink to="/AboutUs">Quem somos</StyledLink>
+                    <StyledLink to="/WorkWithUs">Trabalhe Conosco</StyledLink>
                 </DivLinks>
                 <ButtonPrinc onClick={() => window.open("https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista", "_blank")}>
                     Fale Conosco

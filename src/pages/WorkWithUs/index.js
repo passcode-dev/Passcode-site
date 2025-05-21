@@ -268,7 +268,7 @@ export default function WorkWithUs() {
                             <Sair size={25} onClick={() => setOpen(false)} />
                         </Head>
                         <JoinUs>
-                            <h1>Junte-se a nós👋</h1>
+                            <h1>Junte-se a Nós</h1>
                             <Conteinerinput>
                                 <p>Preencha o formulário abaixo para se candidatar:</p>
                                 
