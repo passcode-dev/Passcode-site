@@ -136,7 +136,7 @@ export default function footer() {
                             <TitleFooter>
                                 <h2>Fale Conosco</h2>
                             </TitleFooter>
-                            <a href="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">+55(18)99745-0885</a>
+                            <a href="https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista">+55 (18) 99745-0885</a>
                     </FooterDivision>
 
 
@@ -146,9 +146,9 @@ export default function footer() {
                                 <h2>Links</h2>
                             </TitleFooter>
 
-                            <a href="/">Inicio</a>
-                            <a href="/AboutUs/AboutUs/">Quem somos</a>
-                            <a href="/WorkWithUs/WorkWithUs">Trabalhe Conosco</a>
+                            <a href="/">Início</a>
+                            <a href="/AboutUs/">Quem somos</a>
+                            <a href="/WorkWithUs">Trabalhe Conosco</a>
                         
                     </FooterDivision>
 
@@ -157,8 +157,8 @@ export default function footer() {
                             <TitleFooter>
                                 <h2>Canais</h2>
                             </TitleFooter>
-                            <a href="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista">Suporte</a>
-                            <a href="https://wa.me/55118997450885?text=Quero%20falar%20com%20um%20especialista"> Fale conosco</a>
+                            <a href="https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista">Suporte</a>
+                            <a href="https://wa.me/5518997450885?text=Quero%20falar%20com%20um%20especialista"> Fale conosco</a>
                         
                     </FooterDivision>
 
